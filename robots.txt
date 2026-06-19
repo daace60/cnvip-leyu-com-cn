@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://daace60.github.io/cnvip-leyu-com-cn/sitemap.xml
