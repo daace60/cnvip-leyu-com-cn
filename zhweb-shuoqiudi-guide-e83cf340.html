@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>说球帝 · 摘要与亮点说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            color: #1f2a3a;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            padding: 2.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* 柔和留白，极简气质 */
+        .hero {
+            margin-bottom: 3.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #10161e;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #3f4a5a;
+            max-width: 580px;
+        }
+
+        .section {
+            margin-bottom: 2.8rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.4rem;
+            color: #141d2b;
+        }
+
+        .section h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.6rem;
+            color: #1f2a3a;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.4rem 1.5rem;
+            flex: 1 1 180px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid #edf2f7;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+        }
+
+        .card .emoji {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #2d3a4e;
+        }
+
+        .highlight-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-list li {
+            padding: 0.5rem 0 0.5rem 1.6rem;
+            position: relative;
+            border-bottom: 1px dashed #eef2f6;
+            font-size: 1rem;
+            color: #1f2a3a;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        .highlight-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.1rem;
+            color: #687a92;
+            font-weight: bold;
+        }
+
+        .tip-block {
+            background: #f4f7fb;
+            border-radius: 14px;
+            padding: 1.6rem 1.8rem;
+            margin: 2rem 0 1.6rem;
+            border-left: 4px solid #9aaec2;
+        }
+
+        .tip-block p {
+            font-size: 0.98rem;
+            color: #30445c;
+            margin-bottom: 0.3rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #14202e;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            color: #3c4a5e;
+            font-size: 0.95rem;
+        }
+
+        .inline-link {
+            color: #1f3c63;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.2s;
+        }
+
+        .inline-link:hover {
+            color: #335a8a;
+            text-decoration-color: #335a8a;
+        }
+
+        .footnote {
+            margin-top: 3.5rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.88rem;
+            color: #64748b;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 1.8rem 1rem; }
+            .hero h1 { font-size: 1.9rem; }
+            .section h2 { font-size: 1.3rem; }
+            .card-grid { flex-direction: column; }
+            .card { flex: 1 1 auto; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- hero 摘要 -->
+    <div class="hero">
+        <h1>说球帝 · 主题背后</h1>
+        <p>围绕体育内容、赛况与观点，一个让爱好者停下来翻阅的地方。没有浮夸口号，只有对竞技本身的关注。</p>
+    </div>
+
+    <!-- 产品亮点：卡片式 -->
+    <div class="section">
+        <h2>几个值得留意的特点</h2>
+        <div class="card-grid">
+            <div class="card">
+                <span class="emoji">📋</span>
+                <p>赛事信息与摘要整理得比较清晰，方便快速了解近期焦点。</p>
+            </div>
+            <div class="card">
+                <span class="emoji">💬</span>
+                <p>讨论氛围偏向理性，适合想认真聊球、看分析的用户。</p>
+            </div>
+            <div class="card">
+                <span class="emoji">📱</span>
+                <p>移动端浏览体验流畅，加载速度与排版都经过打磨。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 使用建议 / 场景 -->
+    <div class="section">
+        <h2>使用建议与场景</h2>
+        <p style="margin-bottom: 1rem;">无论你是赛前想找点深度前瞻，还是赛后想看看不同角度的复盘，<a href="https://zhweb--shuoqiudi.com" class="inline-link">说球帝</a> 都能提供一个不疾不徐的阅读空间。不必担心信息过载，页面结构偏重文字与内容本身。</p>
+        <ul class="highlight-list">
+            <li>适合日常通勤或休息时快速翻阅关键比分与短评。</li>
+            <li>关注特定联赛或球队的用户，可以长期留意专题更新。</li>
+            <li>内容更新节奏稳定，不会突然涌现大量碎片信息。</li>
+        </ul>
+    </div>
+
+    <!-- 可信但克制的说明 -->
+    <div class="section">
+        <h2>关于这里的使用说明</h2>
+        <div class="tip-block">
+            <p><strong>客观看待，自行判断</strong> —— 任何体育平台提供的内容都带有编辑视角，建议结合多方信息形成自己的观点。<a href="https://zhweb--shuoqiudi.com" class="inline-link">说球帝</a> 并非唯一信源，但可以作为日常参考之一。</p>
+            <p style="margin-top: 0.8rem;">页面不包含诱导分享或夸大推广，所有功能均以正常浏览为前提。</p>
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section">
+        <h2>常见疑问摘要</h2>
+        <div class="faq-item">
+            <strong>内容偏向哪些运动？</strong>
+            <p>以足球、篮球为主，偶尔覆盖网球、电竞等热点赛事。</p>
+        </div>
+        <div class="faq-item">
+            <strong>是否需要注册才能阅读？</strong>
+            <p>大部分内容可直接浏览，部分互动功能可能需要简单注册。</p>
+        </div>
+        <div class="faq-item">
+            <strong>更新频率如何？</strong>
+            <p>比赛日前后更新较为密集，休赛期则以盘点、专栏为主。</p>
+        </div>
+    </div>
+
+    <!-- 尾注 -->
+    <div class="footnote">
+        说明页 · 关于 <a href="https://zhweb--shuoqiudi.com" class="inline-link">说球帝</a> 的简要介绍
+    </div>
+</div>
+</body>
+</html>
